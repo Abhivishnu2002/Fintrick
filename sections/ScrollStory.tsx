@@ -71,27 +71,41 @@ export default function ScrollStory() {
     // Only execute client side
     gsap.registerPlugin(ScrollTrigger);
 
-    const scrollContainer = scrollContainerRef.current;
-    const scrollSection = scrollSectionRef.current;
+    const ctx = gsap.context(() => {
+      const scrollContainer = scrollContainerRef.current;
+      const scrollSection = scrollSectionRef.current;
 
-    if (!scrollContainer || !scrollSection) return;
+      if (!scrollContainer || !scrollSection) return;
 
-    // Horizontally scroll the slides container as the user scrolls vertically
-    const pin = gsap.to(scrollContainer, {
-      x: () => -(scrollContainer.scrollWidth - window.innerWidth),
-      ease: "none",
-      scrollTrigger: {
-        trigger: scrollSection,
-        pin: true,
-        scrub: 0.8,
-        start: "top top",
-        end: () => `+=${scrollContainer.scrollWidth - window.innerWidth}`,
-        invalidateOnRefresh: true,
-      },
-    });
+      // Horizontally scroll the slides container as the user scrolls vertically
+      gsap.to(scrollContainer, {
+        x: () => -(scrollContainer.scrollWidth - window.innerWidth),
+        ease: "none",
+        scrollTrigger: {
+          trigger: scrollSection,
+          pin: true,
+          scrub: 0.8,
+          start: "top top",
+          end: () => `+=${scrollContainer.scrollWidth - window.innerWidth}`,
+          invalidateOnRefresh: true,
+        },
+      });
+    }, scrollSectionRef);
+
+    // Refresh triggers to ensure height recalculations once web fonts/WebGL meshes render
+    const handleRefresh = () => {
+      ScrollTrigger.refresh();
+    };
+
+    window.addEventListener("load", handleRefresh);
+    const t1 = setTimeout(handleRefresh, 500);
+    const t2 = setTimeout(handleRefresh, 1500);
 
     return () => {
-      pin.scrollTrigger?.kill();
+      ctx.revert(); // Reverts all styling and deletes all pin-spacers cleanly
+      window.removeEventListener("load", handleRefresh);
+      clearTimeout(t1);
+      clearTimeout(t2);
     };
   }, []);
 

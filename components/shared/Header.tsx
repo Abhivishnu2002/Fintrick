@@ -19,9 +19,6 @@ export default function Header() {
   const menuItems = [
     { name: "Ecosystem", href: "#ecosystem" },
     { name: "Story", href: "#story" },
-    { name: "Products", href: "#products" },
-    { name: "Metrics", href: "#metrics" },
-    { name: "Innovation", href: "#lab" },
     { name: "Presence", href: "#presence" },
   ];
 

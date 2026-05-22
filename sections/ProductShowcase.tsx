@@ -17,8 +17,8 @@ interface ProductShowcaseItem {
 
 const ITEMS: ProductShowcaseItem[] = [
   {
-    id: "orbitpay",
-    name: "OrbitPay",
+    id: "fintrick-pay",
+    name: "Fintrick Pay",
     tagline: "GLOBAL PAYMENTS LAYER",
     icon: CreditCard,
     description: "Accept, split, and route card, bank, and ledger transactions globally with a single integration. Built on highly optimized credit pipelines for enterprise throughput.",
@@ -28,7 +28,7 @@ const ITEMS: ProductShowcaseItem[] = [
       "Integrated regional compliance & tax switches",
       "Sovereign multi-currency card vaults"
     ],
-    mockupTitle: "OrbitPay Dashboard // Global Ledger",
+    mockupTitle: "Fintrick Pay Dashboard // Global Ledger",
     mockupDetails: [
       { label: "Active Gateways", val: "5 Regions" },
       { label: "High Throughput", val: "10,240 tx/s" },
@@ -37,8 +37,8 @@ const ITEMS: ProductShowcaseItem[] = [
     color: "from-blue-500 to-indigo-600",
   },
   {
-    id: "paylio",
-    name: "Paylio",
+    id: "fintrick-creator",
+    name: "Fintrick Creator",
     tagline: "CREATOR ECONOMY BILLING",
     icon: CircleUser,
     description: "Automate sub-dollar payouts, automated tax deductions, and flexible credit lines tailored specifically to the creator platforms and agencies.",
@@ -48,7 +48,7 @@ const ITEMS: ProductShowcaseItem[] = [
       "Platform splitting with multi-tiered structures",
       "Predictive creator credit profiling models"
     ],
-    mockupTitle: "Paylio Invoicing Hub // Splitting Ledger",
+    mockupTitle: "Fintrick Creator Hub // Splitting Ledger",
     mockupDetails: [
       { label: "Payout Frequency", val: "Real-time" },
       { label: "Smart Splitting", val: "Instant Clear" },
@@ -57,8 +57,8 @@ const ITEMS: ProductShowcaseItem[] = [
     color: "from-purple-500 to-indigo-600",
   },
   {
-    id: "rechargic",
-    name: "Rechargic",
+    id: "fintrick-networks",
+    name: "Fintrick Networks",
     tagline: "HIGH-SPEED UTILITY NETWORKS",
     icon: Zap,
     description: "Powering utility networks, digital voucher transactions, and massive telecommunications clearing APIs with resilient system-wide fallbacks.",
@@ -68,7 +68,7 @@ const ITEMS: ProductShowcaseItem[] = [
       "Localized state settlement databases",
       "Microsecond ledger query APIs"
     ],
-    mockupTitle: "Rechargic Ledgers // Resilient Nodes",
+    mockupTitle: "Fintrick Networks Ledgers // Resilient Nodes",
     mockupDetails: [
       { label: "Daily Queries", val: "1.6 Million" },
       { label: "Sync Latency", val: "1.8ms max" },

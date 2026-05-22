@@ -68,10 +68,10 @@ export default function Footer() {
               Products
             </span>
             <div className="flex flex-col gap-2.5">
-              <a href="#products" className="text-xs text-slate-400 hover:text-white transition-colors">OrbitPay</a>
-              <a href="#products" className="text-xs text-slate-400 hover:text-white transition-colors">Paylio</a>
-              <a href="#products" className="text-xs text-slate-400 hover:text-white transition-colors">Rechargic</a>
-              <a href="#products" className="text-xs text-slate-400 hover:text-white transition-colors">Fintrick AI</a>
+              <a href="#ecosystem" className="text-xs text-slate-400 hover:text-white transition-colors">Fintrick Pay</a>
+              <a href="#ecosystem" className="text-xs text-slate-400 hover:text-white transition-colors">Fintrick Creator</a>
+              <a href="#ecosystem" className="text-xs text-slate-400 hover:text-white transition-colors">Fintrick Networks</a>
+              <a href="#ecosystem" className="text-xs text-slate-400 hover:text-white transition-colors">Fintrick AI</a>
             </div>
           </div>
 
@@ -82,7 +82,7 @@ export default function Footer() {
             </span>
             <div className="flex flex-col gap-2.5">
               <a href="#story" className="text-xs text-slate-400 hover:text-white transition-colors">Our Story</a>
-              <a href="#metrics" className="text-xs text-slate-400 hover:text-white transition-colors">Platform Scale</a>
+              <a href="#presence" className="text-xs text-slate-400 hover:text-white transition-colors">Global Presence</a>
               <a href="#cta" className="text-xs text-slate-400 hover:text-white transition-colors">Partner With Us</a>
             </div>
           </div>

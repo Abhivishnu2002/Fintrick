@@ -28,8 +28,8 @@ interface ProductNode {
 
 const PRODUCTS: ProductNode[] = [
   {
-    id: "orbitpay",
-    name: "OrbitPay",
+    id: "fintrick-pay",
+    name: "Fintrick Pay",
     category: "fintech",
     icon: CreditCard,
     orbitIndex: 1,
@@ -40,8 +40,8 @@ const PRODUCTS: ProductNode[] = [
     positionOffset: 0,
   },
   {
-    id: "paylio",
-    name: "Paylio",
+    id: "fintrick-creator",
+    name: "Fintrick Creator",
     category: "creator",
     icon: CircleUser,
     orbitIndex: 1,
@@ -52,8 +52,8 @@ const PRODUCTS: ProductNode[] = [
     positionOffset: 180,
   },
   {
-    id: "rechargic",
-    name: "Rechargic",
+    id: "fintrick-networks",
+    name: "Fintrick Networks",
     category: "commerce",
     icon: Zap,
     orbitIndex: 2,

@@ -33,9 +33,15 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
     // Make lenis globally accessible for other triggers
     (window as any).lenis = lenis;
 
+    const handleLoad = () => {
+      ScrollTrigger.refresh();
+    };
+    window.addEventListener("load", handleLoad);
+
     return () => {
       lenis.destroy();
       gsap.ticker.remove(updateGSAP);
+      window.removeEventListener("load", handleLoad);
       delete (window as any).lenis;
     };
   }, []);
