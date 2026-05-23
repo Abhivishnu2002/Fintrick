@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUp, Layers } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 
 export default function Footer() {
   const handleScrollToTop = () => {
@@ -23,11 +23,13 @@ export default function Footer() {
           
           {/* Brand Col */}
           <div className="lg:col-span-4 flex flex-col gap-4">
-            <a href="#" className="flex items-center gap-2 group cursor-pointer w-fit">
-              <div className="relative flex items-center justify-center w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 overflow-hidden">
-                <Layers className="w-3.5 h-3.5 text-white" />
-              </div>
-              <span className="text-lg font-bold tracking-tight text-white">
+            <a href="#" className="flex items-center gap-3 group cursor-pointer w-fit">
+              <img 
+                src="/Logo.png" 
+                alt="Fintrick Logo" 
+                className="h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105" 
+              />
+              <span className="text-lg font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors duration-300">
                 FINTRICK
               </span>
             </a>

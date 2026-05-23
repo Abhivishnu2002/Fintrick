@@ -19,6 +19,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Fintrick Innovations // Sovereign Digital Infrastructure",
   description: "Creating world-class premium technology ecosystems across Fintech, Creator Economy, Commerce, AI, and Digital Infrastructure. Rooted in Mangalore, scaled globally.",
+  icons: {
+    icon: "/Logo.png",
+    shortcut: "/Logo.png",
+    apple: "/Logo.png",
+  },
   keywords: [
     "Fintrick",
     "Fintrick Innovations",

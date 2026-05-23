@@ -51,7 +51,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen w-full flex items-center justify-center pt-24 pb-16 overflow-hidden">
+    <section id="hero" className="relative min-h-screen w-full flex items-center justify-center pt-40 pb-16 overflow-hidden">
       {/* Visual background beam lights */}
       <div className="absolute top-[20%] left-[-10%] w-[300px] h-[300px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-[20%] right-[-10%] w-[300px] h-[300px] bg-cyan-600/10 rounded-full blur-[100px] pointer-events-none" />

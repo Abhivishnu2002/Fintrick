@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Cpu, ArrowRight, Menu, X, Landmark, Compass, Layers } from "lucide-react";
+import { Cpu, ArrowRight, Menu, X, Landmark, Compass } from "lucide-react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -54,11 +54,12 @@ export default function Header() {
             : "border-transparent"
         }`}>
           {/* Logo Brand */}
-          <a href="#" className="flex items-center gap-2 group cursor-pointer">
-            <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 overflow-hidden shadow-md shadow-blue-500/25">
-              <Layers className="w-4 h-4 text-white group-hover:rotate-12 transition-transform duration-300" />
-              <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
+          <a href="#" className="flex items-center gap-3 group cursor-pointer">
+            <img 
+              src="/Logo.png" 
+              alt="Fintrick Logo" 
+              className="h-20 w-auto object-contain transition-all duration-300 group-hover:scale-105" 
+            />
             <span className="text-xl font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors duration-300">
               FINTRICK
             </span>
